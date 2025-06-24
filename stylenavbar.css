@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: borde;
+    font-family: "Poppins", sans-serif;
+}
+.navbar {
+    width: 100%;
+    background-color: rgb(247, 246, 246);
+    color:white;
+    padding: 15px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .navbar-logo h1 {
+    font-size: 35px;
+    color: rgb(246, 13, 126);
+}
+.navbar .navbar-logo .tec {
+    color: rgba(245, 19, 117, 0.997);
+}
+.navbar ul {
+    list-style: none;
+    gap: 25px;
+    display: flex;
+}
+.navbar ul li {
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(249, 8, 169);
+    transition: 0.3s ease;
+}
+.navbar ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 5px;
+    background-color: rgb(226, 151, 193);
+    transition: 0.3s ease;
+}
+.navbar ul li a:hover {
+    color: rgb(213, 130, 195);
+}
+
+/* css home */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('makeupp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .isi {
+    padding: 1.4rem 7%;
+    max-width: 50rem;
+}
+.isi a {
+    text-decoration: none;
+}
+.isi h1 {
+    margin-top: 1rem;
+    font-size: 45px;
+    color: rgb(241, 4, 95);
+}
+.isi p {
+    font-size: 18px;
+    color: rgb(12, 7, 9);
+    font-weight: 100;
+}
+.isi .cta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: rgb(20, 18, 19);
+    background-color: rgb(235, 90, 139);
+    border-radius: 0.2rem;
+}
